@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>javascript test</title>
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" ></script>
 </head>
 <body>
 
@@ -17,12 +17,19 @@
 
 	<form>
 		<input id="name" type="text" name="" value="" onblur="f1()"><br>
-		<p id="msg"></p>
+		
 		<input type="button" name="btn" value="Click" onclick="f1()">
+		<p id="msg"></p>
 	</form>
 
 	<script>
-		document.getElementsByTagName('')
+		function f1() {
+			var name=document.getElementById("name").value;
+			if(name=="") 
+			{
+				document.getElementById("msg").innerHTML="null submission";
+			}
+		}
 	</script>
 
 
